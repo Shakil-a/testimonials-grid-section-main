@@ -1,6 +1,7 @@
 :root{
     --Moderate-violet: hsl(263, 55%, 52%);
     --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
     --White: hsl(0, 0%, 100%);
     --Light-gray: hsl(0, 0%, 81%);
     --Light-grayish-blue: hsl(210, 46%, 95%);
@@ -33,3 +34,71 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+  body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 15px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+
+  main{
+    max-width: 90%;
+    margin: 60px auto;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .profile{
+   display: flex;
+  }
+
+  img{
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+  }
+
+  article{
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  article p{
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-1{
+    background-color: var(--Moderate-violet);
+  }
+
+  .card-2{
+    background-color: var(--Very-dark-blackish-blue);
+  }
+
+  .card-3{
+    background-color: var(--White);
+  }
+
+  .card-4{
+    background-color: var(--Very-dark-blackish-blue);
+  }
+
+  .card-5{
+    background-color: var(--White);
+  }
+
+  .card-1,
+  .card-2,
+  .card-4{
+  color: var(--White);
+  }
+
+  .card-3,
+  .card-5{
+    color: var(--Very-dark-grayish-blue);
+  }
+
+blockquote{
+  font-weight: 500;
+}
